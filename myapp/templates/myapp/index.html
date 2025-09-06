@@ -1,0 +1,106 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}Главная - ШтукатуркаПро{% endblock %}
+
+{% block content %}
+<!-- Герой-секция -->
+<section class="hero-section py-5 text-white" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/static/images/hero-bg.jpg'); background-size: cover;">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Профессиональная штукатурка стен</h1>
+                <p class="lead my-4">Механизированная штукатурка с гарантией 5 лет. Работаем в Москве и области.</p>
+                <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Бесплатный замер</a>
+                <a href="#services" class="btn btn-outline-light btn-lg px-4">Наши услуги</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Услуги -->
+<section id="services" class="py-5" style="
+    background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)),
+                url('/static/images/services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+">
+    <div class="container">
+        <h2 class="text-center mb-5">Наши услуги</h2>
+        <div class="row g-4">
+            <!-- Услуга 1: Механизированная штукатурка -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/static/images/service1.jpg" class="card-img-top" alt="Механизированная штукатурка">
+                    <div class="card-body">
+                        <h5 class="card-title">Механизированная штукатурка</h5>
+                        <p class="card-text">Идеально ровные стены за 1 день с использованием немецкого оборудования.</p>
+                        <p class="text-primary fw-bold">от 450 руб/м²</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Услуга 2: Шпаклевка стен (добавлено) -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/static/images/shpaklevka.jpg" class="card-img-top" alt="Шпаклевка стен"> <!-- Замените на ваше изображение -->
+                    <div class="card-body">
+                        <h5 class="card-title">Шпаклевка стен</h5>
+                        <p class="card-text">Финишное выравнивание стен под покраску или обои. Используем только качественные материалы.</p>
+                        <p class="text-primary fw-bold">от 300 руб/м²</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Услуга 3: Стяжка полов (добавлено) -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="/static/images/styazhka.jpg" class="card-img-top" alt="Стяжка полов"> <!-- Замените на ваше изображение -->
+                    <div class="card-body">
+                        <h5 class="card-title">Стяжка полов</h5>
+                        <p class="card-text">Профессиональное выравнивание пола с применением современных смесей. Идеальная основа для любого покрытия.</p>
+                        <p class="text-primary fw-bold">от 550 руб/м²</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section id="contact" class="py-5" style="
+    background: url('/static/images/contacts.jpg');
+    background-size: 400px;
+    background-blend-mode: overlay;
+">
+    <div class="container">
+        <h2 class="text-center mb-5">Контакты</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-4">
+                    <h4><i class="fas fa-map-marker-alt me-2"></i>Адрес</h4>
+                    <p>г. Москва, ул. Строителей, 15</p>
+                </div>
+                <div class="mb-4">
+                    <h4><i class="fas fa-phone me-2"></i>Телефон</h4>
+                    <p>+7 (999) 123-45-67</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form class="bg-light p-4 rounded shadow-sm">
+                    <h4 class="mb-4">Оставить заявку</h4>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Телефон" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

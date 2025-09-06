@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "C:/Users/Рамазанчик/AppData/Local/Programs/Python/Python311/Lib/site-packages",
+        "./myapp"
+    ],
+    "python.languageServer": "Pylance"
+}

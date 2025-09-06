@@ -1,0 +1,36 @@
+/* Основные стили */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1920x1080');
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+}
+/* Секция услуг */
+.services-bg {
+  background-color: #f8f9fa;
+  background-image: url('/static/images/dots-pattern.png');
+  background-size: 30px;
+}
+
+/* Контакты */
+.contact-gradient {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
